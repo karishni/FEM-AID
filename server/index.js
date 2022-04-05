@@ -15,7 +15,8 @@ if (!config.get("jwtPrivateKey")) {
   process.exit(1);
 }
 
-let mongoDB = "mongodb://127.0.0.1/forum";
+// let mongoDB = "mongodb://127.0.0.1/forum";
+let mongoDB = "mongodb+srv://karishni:We4You@we4you.9tov3.mongodb.net/FemAid?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongoDB, {
@@ -25,7 +26,7 @@ mongoose
     useFindAndModify: false,
   })
   .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("could not connect to mongoDB"));
+  .catch((err) => console.error("could not connect to mongoDB", err));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

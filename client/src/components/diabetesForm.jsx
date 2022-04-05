@@ -7,9 +7,9 @@ import http from "../services/httpService";
 import { tagsEndPoint } from "../config.json";
 import { createpost } from "../services/postCreateService";
 
-class NewPost extends Form {
+class DiabetesForm extends Form {
   state = {
-    data: { title: "", description: "", tags: [] },
+    data: { Pregnancies: "", Glucose: "", BloodPressure: "" },
     errors: { title: "", description: "", tags: [] },
     tags: [],
   };
@@ -58,28 +58,27 @@ class NewPost extends Form {
       <React.Fragment>
         <ToastContainer />
         <div className="container-lg">
-          <h1 className="text-center m-2">Create a New Discussion</h1>
+          <h1 className="text-center m-2">Diabetes Prediction</h1>
           <div
             className="container m-4 p-4 rounded"
             style={{ backgroundColor: "#F1F1F1" }}
           >
             <form onSubmit={this.handleSubmit}>
               <Input
-                value={data.title}
+                value={data.Pregnancies}
                 onChange={this.handleChange}
-                label="Title"
-                name="title"
+                label="Number of Pregnancies"
+                name="pregnancies"
                 type="text"
                 error={errors.title}
               />
               <div className="form-group">
-                <label htmlFor="description">Description</label>
-                <textarea
-                  value={data.description}
+                <Input
+                  value={data.Glucose}
                   onChange={this.handleChange}
-                  name="description"
-                  type="description"
-                  id="description"
+                  label="Glucose"
+                  name="glucose"
+                  type="text"
                   className="form-control"
                 />
                 {errors.description && (
@@ -89,19 +88,6 @@ class NewPost extends Form {
               <div className="form-group">
                 <label htmlFor="tags">Related Tags</label>
                 <br />
-                {tags.map((tag) => (
-                  <React.Fragment>
-                    <label key={tag._id} className="mr-3 ml-3">
-                      <input
-                        key={tag._id}
-                        className="form-check-input"
-                        type="checkbox"
-                        onChange={() => this.handleTagChange(tag._id)}
-                      />
-                      {tag.name}
-                    </label>
-                  </React.Fragment>
-                ))}
                 {errors.tags && <div className="alert-info">{errors.tags}</div>}
               </div>
               <div className="text-center">
@@ -120,4 +106,4 @@ class NewPost extends Form {
   }
 }
 
-export default NewPost;
+export default DiabetesForm;

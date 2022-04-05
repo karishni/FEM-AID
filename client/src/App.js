@@ -15,6 +15,7 @@ import Register from "./components/register";
 import NavBar from "./components/navbar";
 import ProtectedRoute from "./components/common/protectedRoute";
 import PostPage from "./components/PostPage";
+import DiabetesForm from "./components/diabetesForm";
 
 class App extends Component {
   state = {};
@@ -36,7 +37,7 @@ class App extends Component {
           <Route path="/users/login" component={Log} />
           <Route path="/users/register" component={Register} />
           <Route path="/users/logout" component={Logout} />
-          <Route
+          <ProtectedRoute
             path="/dashboard"
             render={(props) => <Dashboard {...props} user={this.state.user} />}
           />
@@ -44,6 +45,10 @@ class App extends Component {
           <ProtectedRoute
             path="/new-post"
             render={(props) => <NewPost {...props} user={this.state.user} />}
+          />
+          <ProtectedRoute
+            path="/diabetes-prediction"
+            render={(props) => <DiabetesForm {...props} user={this.state.user} />}
           />
           <Route
             path="/post/:id"

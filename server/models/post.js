@@ -7,7 +7,7 @@ const postSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    minlength: 10,
+    minlength: 1,
     maxlength: 80,
   },
   tags: {

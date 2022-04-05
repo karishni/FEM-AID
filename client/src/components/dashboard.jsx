@@ -59,7 +59,19 @@ class Dashboard extends Component {
     const filtered = selectedTag._id === "1" ? allposts : this.getPosts();
     const posts = paginate(filtered, currentPage, pageSize);
     if (allposts.length === 0)
-      return <p>There are no posts in the database!</p>;
+      return (
+       <div>
+      <p>There are no posts in the database!</p>
+      <Link to="/new-post">
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      style={{ marginBottom: 20 }}
+                    >
+                      New Post
+                    </button>
+                  </Link>;
+                  </div> )
     return (
       <React.Fragment>
         <div className="container">
