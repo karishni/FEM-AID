@@ -1,8 +1,8 @@
-# Discussion Forum
+# FEM-AID
 
-A disscussion forum built using ReactJS, NodeJS and MongoDB.
+Here to have a conversation about mental health
 
-<img src="images/post1.png">
+<!-- <img src="images/post1.png"> -->
 
 ## Features
 
