@@ -43,41 +43,70 @@ class Log extends Form {
     }
     const { data, errors } = this.state;
     return (
-      <div>
-        <div className="container col-lg-3 col-md-6 border rounded mt-3">
-          <h1 className="p-3">Login</h1>
+      // <section class="">
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style={{backgroundColor: "hsl(0, 0%, 96%)", height: '730px'}}>
+          <div class="container">
+            <div class="row gx-lg-5 align-items-center">
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <h1 class="my-5 display-3 fw-bold ls-tight">
+                  The best offer <br />
+                  <span class="text-primary">for your business</span>
+                </h1>
+                <p style={{color: "hsl(217, 10%, 50.8%)"}}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+                  quibusdam tempora at cupiditate quis eum maiores libero
+                  veritatis? Dicta facilis sint aliquid ipsum atque?
+                </p>
+              </div>
 
-          <form onSubmit={this.handleSubmit}>
-            <Input
-              name="email"
-              value={data.email}
-              label="Email ID"
-              onChange={this.handleChange}
-              error={errors.email}
-            />
-            <Input
-              name="password"
-              value={data.password}
-              label="Password"
-              onChange={this.handleChange}
-              error={errors.password}
-              type="password"
-            />
-            <div className="text-center">
-              <button
-                className="btn btn-primary m-3"
-                disabled={this.validate()}
-              >
-                Login
-              </button>
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card">
+                  <div class="card-body py-5 px-md-5">
+                    <form onSubmit={this.handleSubmit}>
+                      
+                      <div class="form-outline mb-4">
+                        <Input id="form3Example1" class="form-control"
+                          name="email"
+                          value={data.email}
+                          label="Email ID"
+                          onChange={this.handleChange}
+                          error={errors.email} />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <Input id="form3Example2" class="form-control"
+                        name="password"
+                        value={data.password}
+                        label="Password"
+                        onChange={this.handleChange}
+                        error={errors.password}
+                        type="password"/>
+                      </div>
+
+                      <div className="text-center">
+                        <button
+                          className="btn btn-primary m-3"
+                          disabled={this.validate()}
+                        >
+                        Login
+                        </button>
+                      </div>
+
+                    </form>
+                  
+                  <div className="container col-lg-3 col-md-6 border rounder mt-1 p-3 text-center" style={{maxWidth: '100%'}}>
+                    New User? <Link to="/users/register">Register Here</Link>
+                  </div>
+                    
+                </div>
+               </div>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-        <div className="container col-lg-3 col-md-6 border rounder mt-1 p-3 text-center">
-          New User? <Link to="/users/register">Register Here</Link>
-        </div>
-        <ToastContainer />
-      </div>
+      //</section>    
+      
     );
   }
 }

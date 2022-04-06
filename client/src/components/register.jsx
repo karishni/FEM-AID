@@ -41,56 +41,89 @@ class Register extends Form {
     return (
       <React.Fragment>
         <ToastContainer />
-        <div className="container-fluid col-lg-4 col-md-8">
-          <h1>Register</h1>
-          <form onSubmit={this.handleSubmit}>
-            <Input
-              value={data.name}
-              onChange={this.handleChange}
-              label="Name"
-              name="name"
-              type="text"
-              error={errors.name}
-            />
-            <Input
-              name="username"
-              value={data.username}
-              label="Username"
-              type="text"
-              onChange={this.handleChange}
-              error={errors.username}
-            />
-            <Input
-              value={data.email}
-              onChange={this.handleChange}
-              label="Email ID"
-              type="text"
-              name="email"
-              error={errors.email}
-            />
-            <Input
-              value={data.password}
-              onChange={this.handleChange}
-              label="Password"
-              type="password"
-              name="password"
-              error={errors.password}
-            />
-            <Input
-              value={data.password2}
-              onChange={this.handleChange}
-              label="Confirm Password"
-              name="password2"
-              type="password"
-              error={errors.password2}
-            />
-            <div className="d-grid gap-2">
-              <button className="btn btn-primary" disabled={this.validate()}>
-                Register
-              </button>
+          <section class="">
+            <div class="px-4 py-5 px-md-5 text-center text-lg-start" style={{backgroundColor: "hsl(0, 0%, 96%)"}}>
+              <div class="container">
+                <div class="row gx-lg-5 align-items-center">
+                  <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="my-5 display-3 fw-bold ls-tight">
+                      The best offer <br />
+                      <span class="text-primary">for your business</span>
+                    </h1>
+                    <p style={{color: "hsl(217, 10%, 50.8%)"}}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+                      quibusdam tempora at cupiditate quis eum maiores libero
+                      veritatis? Dicta facilis sint aliquid ipsum atque?
+                    </p>
+                  </div>
+
+                  <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card">
+                      <div class="card-body py-5 px-md-5">
+                        <form onSubmit={this.handleSubmit}>
+                          
+                          <div class="form-outline mb-4">
+                                <Input value={data.name} 
+                                  placeholder="Name"
+                                  label="Name"
+                                  onChange={this.handleChange}
+                                  name="name"
+                                  type="text"
+                                  style={{textAlign: 'left'}}
+                                  error={errors.name} id="form3Example1" class="form-control" />
+                              </div>
+
+                          <div class="form-outline mb-4">
+                            <Input id="form3Example2" class="form-control"
+                            name="username"
+                            value={data.username}
+                            label="Username"
+                            type="text"
+                            onChange={this.handleChange}
+                            error={errors.username}/>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <Input type="email" id="form3Example3" class="form-control" 
+                            value={data.email}
+                            onChange={this.handleChange}
+                            label="Email ID"
+                            name="email"
+                            error={errors.email}/>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <Input type="password" id="form3Example4" class="form-control" 
+                              value={data.password}
+                              onChange={this.handleChange}
+                              label="Password"
+                              name="password"
+                              error={errors.password}
+                            />
+                          </div>
+                          <div class="form-outline mb-4">
+                            <Input type="password" id="form3Example4" class="form-control" 
+                              value={data.password2}
+                              onChange={this.handleChange}
+                              label="Confirm Password"
+                              name="password2"
+                              error={errors.password2}
+                            />
+                          </div>
+
+                          <button className="btn btn-primary" disabled={this.validate()}>
+                            Register
+                          </button>
+
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </form>
-        </div>
+          </section>      
       </React.Fragment>
     );
   }
