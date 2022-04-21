@@ -2,11 +2,11 @@ import React from "react";
 
 const Jumotron = () => {
   return (
-    <div className="jumbotron">
-      <h1 className="display-3">Community</h1>
-      <p class="lead">We &lt;3 people who code!</p>
+    <div className="jumbotron" style={{backgroundColor:"#D4F1F4"}}>
+      <h1 className="display-3">Welcome to FemAid</h1>
+      <p class="lead">Here to have a conversation regarding female health.</p>
       <hr class="my-4" />
-      <p className="lead">A disscussion forum for enthusiastic developers.</p>
+      <p className="lead">Join our community.</p>
     </div>
   );
 };

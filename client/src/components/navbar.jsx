@@ -33,12 +33,12 @@ const NavBar = ({ user }) => {
             <React.Fragment>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/users/login">
-                <Button variant="outline-info">Log In</Button>
+                <Button variant="outline-info" style={{borderColor:"#D4F1F4"}}>Log In</Button>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/users/register">
-                  <Button variant="info">Register</Button>
+                  <Button variant="info" style={{backgroundColor:"#D4F1F4", color: "Black", borderColor:"#D4F1F4"}}>Register</Button>
                 </NavLink>
               </li>
             </React.Fragment>
