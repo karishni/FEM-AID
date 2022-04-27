@@ -16,7 +16,7 @@ import NavBar from "./components/navbar";
 import ProtectedRoute from "./components/common/protectedRoute";
 import PostPage from "./components/PostPage";
 import DiabetesForm from "./components/diabetesForm";
-import Glass from './components/Glass'
+import Glass from './components/diabetes'
 
 class App extends Component {
   state = {};

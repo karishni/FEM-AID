@@ -1,9 +1,9 @@
 import './Glass.css'
 import { useState } from 'react'
-//import axios from 'axios'
+import axios from 'axios'
 
-var axios = require('axios');
-var FormData = require('form-data');
+//var axios = require('axios');
+//var FormData = require('form-data');
 var data = new FormData();
 
 function Glass() {
@@ -15,18 +15,20 @@ function Glass() {
   const [BMI, setBMI] = useState('')
   const [DiabetesPedigreeFunction, setDiabetesPedigreeFunction] = useState('')
   const [Age, setAge] = useState('')
+  const [predicted, setPredicted] = useState(false)
+  const [diabetes, setDiabetes] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    data.append('Pregnancies', '0');
-    data.append('Glucose', '120');
-    data.append('BloodPressure', '120');
-    data.append('SkinThickness', '20');
-    data.append('Insulin', '80');
-    data.append('BMI', '33');
-    data.append('DiabetesPedigreeFunction', '0.77');
-    data.append('Age', '55');
-
+    data.append('Pregnancies', Pregnancies);
+    data.append('Glucose', Glucose);
+    data.append('BloodPressure', BloodPressure);
+    data.append('SkinThickness', SkinThickness);
+    data.append('Insulin', Insulin);
+    data.append('BMI', BMI);
+    data.append('DiabetesPedigreeFunction', DiabetesPedigreeFunction);
+    data.append('Age', Age);
+    //console.log(Pregnancies.toString());
     //const params = { Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age }
     //const params = { 0, 120, 120, 20, 80, 33, 0.7, 44 }
     
@@ -41,7 +43,14 @@ function Glass() {
     
     axios(config)
     .then(function (response) {
-      console.log(JSON.stringify(response.data));
+      console.log(response.data.diabetes);
+      if (response.data.diabetes === '1'){
+        setDiabetes('Yes')
+      }else{
+        setDiabetes('No')
+      }
+      setPredicted(true);
+      console.log(predicted)
     })
     .catch(function (error) {
       console.log(error);
@@ -61,107 +70,118 @@ function Glass() {
   }
 
   return (
-    <div className="glass">
+    <div className = "row">
+    {(predicted) ? ((diabetes ==='Yes')? (
+      <div className = "column">{diabetes}</div>)
+      :(<div className = "column">{diabetes}</div>)): (
+    <div className = "column">Diabetes info</div>
+    )}
+    <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
-        <h4>Employment Data</h4>
+        <h2>Diabetes</h2>
         <div className="glass__form__group">
+          <label>Number of Pregnancies</label><br/>
           <input
             id="Pregnancies"
             className="glass__form__input"
-            placeholder="Pregnancies"
+            //placeholder="Pregnancies"
             //required
             type="number"
-            value={'0'}
+            value={Pregnancies}
             onChange={(e) => setPregnancies(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>Glucose</label><br/>
           <input
             id="Glucose"
             className="glass__form__input"
-            placeholder="Glucose"
+            //placeholder="Glucose"
             //required
             type="number"
-            value={'120'}
+            value={Glucose}
             onChange={(e) => setGlucose(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>Blood Pressure</label><br/>
           <input
             id="BloodPressure"
             className="glass__form__input"
-            placeholder="BloodPressure"
+            //placeholder="BloodPressure"
             //required
             type="number"
-            value={'120'}
+            value={BloodPressure}
             onChange={(e) => setBloodPressure(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>Skin Thickness</label><br/>
           <input
             id="SkinThickness"
             className="glass__form__input"
-            placeholder="SkinThickness"
+            //placeholder="SkinThickness"
             //required
             type="number"
-            value={'20'}
+            value={SkinThickness}
             onChange={(e) => setSkinThickness(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>Insulin</label><br/>
           <input
             id="Insulin"
             className="glass__form__input"
-            placeholder="Insulin"
+            //placeholder="Insulin"
             //required
             type="number"
-            value={'80'}
+            value={Insulin}
             onChange={(e) => setInsulin(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>BMI</label><br/>
           <input
             id="BMI"
             className="glass__form__input"
-            placeholder="BMI"
+            //placeholder="BMI"
             //required
             type="number"
-            value={'33'}
+            value={BMI}
             onChange={(e) => setBMI(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>Diabetes Pedigree Function</label><br/>
           <input
             id="DiabetesPedigreeFunction"
             className="glass__form__input"
-            placeholder="DiabetesPedigreeFunction"
+            //placeholder="DiabetesPedigreeFunction"
             //required
             type="number"
-            value={'0.77'}
+            value={DiabetesPedigreeFunction}
             onChange={(e) => setDiabetesPedigreeFunction(e.target.value)}
           />
         </div>
 
         <div className="glass__form__group">
+          <label>Age</label><br/>
           <input
             id="Age"
             className="glass__form__input"
-            placeholder="Age"
+            //placeholder="Age"
             //required
             type="number"
-            value={'44'}
+            value={Age}
             onChange={(e) => setAge(e.target.value)}
           />
         </div>
-
-
-
 
         <div className="glass__form__group">
           <button type="submit" className="glass__form__btn">
@@ -169,6 +189,7 @@ function Glass() {
           </button>
         </div>
       </form>
+    </div>
     </div>
   )
 }
