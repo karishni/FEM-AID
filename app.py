@@ -4,7 +4,7 @@ import numpy as np
 
 from flask import Flask, request, jsonify
 
-model = pickle.load(open('diabetes-prediction-rfc-model_1.pkl', 'rb'))
+model = pickle.load(open('diabetes-prediction-rfc-model.pkl', 'rb'))
 
 app = Flask(__name__)
 

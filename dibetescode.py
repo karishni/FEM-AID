@@ -31,7 +31,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 # Creating Random Forest Model
 from sklearn.ensemble import RandomForestClassifier
 
-classifier = RandomForestClassifier(n_estimators=10)
+classifier = RandomForestClassifier(n_estimators=20)
 classifier.fit(X_train, y_train)
 
 Y_pred_ranfor = classifier.predict(X_test)
@@ -46,5 +46,5 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, Y_pred_ranfor)
 print(cm)
 
-filename = 'diabetes-prediction-rfc-model_1.pkl'
+filename = 'diabetes-prediction-rfc-model.pkl'
 pickle.dump(classifier, open(filename, 'wb'))
