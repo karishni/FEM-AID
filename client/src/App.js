@@ -19,6 +19,7 @@ import DiabetesForm from "./components/diabetesForm";
 import Glass from './components/diabetes'
 import PCOS from './components/pcos'
 import Health from './components/Health'
+import DiseaseDetection from "./components/DiseaseDetection";
 
 class App extends Component {
   state = {};
@@ -61,6 +62,7 @@ class App extends Component {
           <Route exact path="/diabetes" component={Glass} />
           <Route exact path="/pcos" component={PCOS} />
           <Route exact path="/BMI" component={Health} />
+          <Route exact path="/diseasepred" component={DiseaseDetection}/>
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/not-found" />
         </Switch>

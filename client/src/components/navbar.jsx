@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 //#D4F1F4
 const NavBar = ({ user }) => {
   return (
-    <nav className="navbar navbar-expand-lg sticky-top " style={{backgroundColor: "#1B405A"}}>
+    <nav className="navbar navbar-expand-lg sticky-top " style={{backgroundColor: "#5b4a76"}}>
       <NavLink className="navbar-brand" to="/">
         <b style={{color: "#F9B145"}}>FEM-AID</b>
       </NavLink>
