@@ -1,6 +1,7 @@
 import './Glass.css'
 import { useState } from 'react'
 import axios from 'axios'
+import PCOSs from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/PCOS1.jpg"
 
 //var axios = require('axios');
 //var FormData = require('form-data');
@@ -102,11 +103,36 @@ function PCOS() {
   }
 
   return (
+    <div className='text'>
     <div className = "row">
     {(predicted) ? ((pcos ==='Yes')? (
       <div className = "column">{pcos}</div>)
       :(<div className = "column">{pcos}</div>)): (
-    <div className = "column">PCOS info</div>
+    <div className = "column"><div className='vert_align'>
+      <div className='image'>
+      <img src={PCOSs} className="exp__image" alt="" />
+      </div>
+      <div className='text1'>
+      <b>Polycystic ovary syndrome (PCOS)</b> is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may develop numerous small collections of fluid (follicles) and fail to regularly release eggs.
+
+      The exact cause of PCOS is unknown. Early diagnosis and treatment along with weight loss may reduce the risk of long-term complications such as type 2 diabetes and heart disease.<br></br><br></br>
+      <b>Symptoms</b><br></br>
+      Signs and symptoms of PCOS often develop around the time of the first menstrual period during puberty. Sometimes PCOS develops later, for example, in response to substantial weight gain.
+      Signs and symptoms of PCOS vary. A diagnosis of PCOS is made when you experience at least two of these signs:<br></br>
+      1) <b>Irregular periods.</b> Infrequent, irregular or prolonged menstrual cycles are the most common sign of PCOS. For example, you might have fewer than nine periods a year, more than 35 days between periods and abnormally heavy periods.<br></br>
+      2) <b>Excess androgen.</b> Elevated levels of male hormones may result in physical signs, such as excess facial and body hair (hirsutism), and occasionally severe acne and male-pattern baldness.<br></br>
+      3) <b>Polycystic ovaries.</b> Your ovaries might be enlarged and contain follicles that surround the eggs. As a result, the ovaries might fail to function regularly.<br></br><br></br>
+      PCOS signs and symptoms are typically more severe if you're obese.<br></br><br></br>
+      <b>Causes</b><br></br>
+      The exact cause of PCOS isn't known. Factors that might play a role include:<br></br>
+
+      1) <b>Excess insulin.</b> Insulin is the hormone produced in the pancreas that allows cells to use sugar, your body's primary energy supply. If your cells become resistant to the action of insulin, then your blood sugar levels can rise and your body might produce more insulin. Excess insulin might increase androgen production, causing difficulty with ovulation.<br></br>
+      2) <b>Low-grade inflammation.</b> This term is used to describe white blood cells' production of substances to fight infection. Research has shown that women with PCOS have a type of low-grade inflammation that stimulates polycystic ovaries to produce androgens, which can lead to heart and blood vessel problems.<br></br>
+      3) <b>Heredity.</b> Research suggests that certain genes might be linked to PCOS.<br></br>
+      4) <b>Excess androgen.</b> The ovaries produce abnormally high levels of androgen, resulting in hirsutism and acne.
+        </div>
+    </div>
+    </div>
     )}
     <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
@@ -423,6 +449,7 @@ function PCOS() {
           </button>
         </div>
       </form>
+    </div>
     </div>
     </div>
   )
