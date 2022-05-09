@@ -17,6 +17,8 @@ import ProtectedRoute from "./components/common/protectedRoute";
 import PostPage from "./components/PostPage";
 import DiabetesForm from "./components/diabetesForm";
 import Glass from './components/diabetes'
+import PCOS from './components/pcos'
+import Health from './components/Health'
 
 class App extends Component {
   state = {};
@@ -57,6 +59,8 @@ class App extends Component {
           />
           <Route exact path="/" component={Jumotron} />
           <Route exact path="/diabetes" component={Glass} />
+          <Route exact path="/pcos" component={PCOS} />
+          <Route exact path="/BMI" component={Health} />
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/not-found" />
         </Switch>
