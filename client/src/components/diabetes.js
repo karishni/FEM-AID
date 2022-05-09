@@ -1,6 +1,7 @@
 import './Glass.css'
 import { useState } from 'react'
 import axios from 'axios'
+import Diabeties from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/Diabeties1.jpg"
 
 //var axios = require('axios');
 //var FormData = require('form-data');
@@ -70,11 +71,27 @@ function Glass() {
   }
 
   return (
+    <div className='text'>
     <div className = "row">
     {(predicted) ? ((diabetes ==='Yes')? (
       <div className = "column">{diabetes}</div>)
       :(<div className = "column">{diabetes}</div>)): (
-    <div className = "column">Diabetes info</div>
+    <div className = "column">
+      <div className='image'>
+      <img src={Diabeties} className="exp__image" alt="" />
+      </div>
+      
+      <b>Pregnancies:</b> No. of pregnancies you've had (if any)<br></br><br></br>
+      <b>Glucose:</b> Your blood sugar level in mg/dL<br></br><br></br>
+      <b>Blood Pressure:</b> Enter your diastolic blood pressure.<br></br><br></br>
+      For example: in 132/88 mmHg , 88 is the diastolic blood pressure<br></br><br></br>
+      <b>Skin Thickness: </b>Triceps skin fold thickness in mm<br></br><br></br>
+      <b>Insulin:</b> Your insulin level in pmol/L<br></br><br></br>
+      <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
+      <b>Diabetes Pedigree Function:</b><br></br><br></br>
+      <b>Age: </b>Enter your age
+    </div>
+    
     )}
     <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
@@ -189,6 +206,7 @@ function Glass() {
           </button>
         </div>
       </form>
+    </div>
     </div>
     </div>
   )
