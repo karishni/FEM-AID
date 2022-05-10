@@ -77,10 +77,11 @@ function Glass() {
       <div className = "column">{diabetes}</div>)
       :(<div className = "column">{diabetes}</div>)): (
     <div className = "column">
+      <div className='vert_align'>
       <div className='image'>
       <img src={Diabeties} className="exp__image" alt="" />
       </div>
-      
+      <div className='text1'>
       <b>Pregnancies:</b> No. of pregnancies you've had (if any)<br></br><br></br>
       <b>Glucose:</b> Your blood sugar level in mg/dL<br></br><br></br>
       <b>Blood Pressure:</b> Enter your diastolic blood pressure.<br></br><br></br>
@@ -90,6 +91,8 @@ function Glass() {
       <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
       <b>Diabetes Pedigree Function:</b><br></br><br></br>
       <b>Age: </b>Enter your age
+      </div>
+      </div>
     </div>
     
     )}
