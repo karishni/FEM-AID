@@ -1,7 +1,7 @@
 import './Glass.css'
 import { useState } from 'react'
 import axios from 'axios'
-import Diabeties from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/Diabeties1.jpg"
+import Diabeties from "../Assets/Diabeties1.jpg"
 
 //var axios = require('axios');
 //var FormData = require('form-data');
@@ -16,7 +16,10 @@ function Cervical() {
   const [hpv, setHPV] = useState('')
   const [Age, setAge] = useState('')
   const [predicted, setPredicted] = useState(false)
-  const [cervical, setCervical] = useState('')
+  const [bio, setBio] = useState('')
+  const [cito, setCito] = useState('')
+  const [hin, setHin] = useState('')
+  const [sch, setSch] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -32,7 +35,7 @@ function Cervical() {
     //const params = { Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age }
     //const params = { 0, 120, 120, 20, 80, 33, 0.7, 44 }
     
-    var config = {
+    var config1 = {
       method: 'post',
       url: 'https://cors-anywhere.herokuapp.com/https://fem-aid-cancer-b.herokuapp.com/predict',
       headers: { 
@@ -41,20 +44,92 @@ function Cervical() {
       data : data
     };
     
-    axios(config)
+    axios(config1)
     .then(function (response) {
-      console.log(response.data.bioccancer);
-      if (response.data.diabetes === '1.0'){
-        setCervical('Yes')
+      console.log('bio: '+response.data.bioccancer);
+      if (response.data.bioccancer === '1.0'){
+        setBio('Yes')
       }else{
-        setCervical('No')
+        setBio('No')
       }
       setPredicted(true);
-      console.log(predicted)
+      console.log('Predicted bio: '+predicted)
     })
     .catch(function (error) {
       console.log(error);
     });
+
+    var config2 = {
+        method: 'post',
+        url: 'https://cors-anywhere.herokuapp.com/https://fem-aid-cancer-c.herokuapp.com/predict',
+        headers: { 
+          'content-type': 'string'
+        },
+        data : data
+      };
+      
+      axios(config2)
+      .then(function (response) {
+        console.log('cito: '+response.data.citoccancer);
+        if (response.data.citoccancer === '1.0'){
+          setCito('Yes')
+        }else{
+          setCito('No')
+        }
+        setPredicted(true);
+        console.log('predicted cito:' +predicted)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+      var config3 = {
+        method: 'post',
+        url: 'https://cors-anywhere.herokuapp.com/https://fem-aid-cancer-h.herokuapp.com/predict',
+        headers: { 
+          'content-type': 'string'
+        },
+        data : data
+      };
+      
+      axios(config3)
+      .then(function (response) {
+        console.log('hin: '+response.data.hinccancer);
+        if (response.data.hinccancer === '1.0'){
+          setHin('Yes')
+        }else{
+          setHin('No')
+        }
+        setPredicted(true);
+        console.log('predicted hin:' +predicted)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+      var config4 = {
+        method: 'post',
+        url: 'https://cors-anywhere.herokuapp.com/https://fem-aid-cancer-s.herokuapp.com/predict',
+        headers: { 
+          'content-type': 'string'
+        },
+        data : data
+      };
+      
+      axios(config4)
+      .then(function (response) {
+        console.log('hin: '+response.data.schccancer);
+        if (response.data.schccancer === '1.0'){
+          setSch('Yes')
+        }else{
+          setSch('No')
+        }
+        setPredicted(true);
+        console.log('predicted hin:' +predicted)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     
   }
 
@@ -72,9 +147,9 @@ function Cervical() {
   return (
     <div className='text'>
     <div className = "row">
-    {(predicted) ? ((diabetes ==='Yes')? (
-      <div className = "column">{diabetes}</div>)
-      :(<div className = "column">{diabetes}</div>)): (
+    {(predicted) ? ((bio ==='Yes')? (
+      <div className = "column">{bio}{cito}</div>)
+      :(<div className = "column">{bio} {cito} {hin} {sch}</div>)): (
     <div className = "column">
       <div className='image'>
       <img src={Diabeties} className="exp__image" alt="" />
