@@ -1,7 +1,7 @@
 import './Glass.css'
 import { useState } from 'react'
 import axios from 'axios'
-import Diabeties from "../Assets/Diabeties1.jpg"
+import CV from "../Assets/CervicalCancer1.jpg"
 
 //var axios = require('axios');
 //var FormData = require('form-data');
@@ -152,7 +152,7 @@ function Cervical() {
       :(<div className = "column">{bio} {cito} {hin} {sch}</div>)): (
     <div className = "column">
       <div className='image'>
-      <img src={Diabeties} className="exp__image" alt="" />
+      <img src={CV} className="exp__image" alt="" />
       </div>
       
       <b>Pregnancies:</b> No. of pregnancies you've had (if any)<br></br><br></br>
@@ -169,7 +169,7 @@ function Cervical() {
     )}
     <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
-        <h2>Diabetes</h2>
+        <h2>Cervical Cancer</h2>
         <div className="glass__form__group">
           <label>Age</label><br/>
           <input
@@ -222,7 +222,7 @@ function Cervical() {
         </div>
 
         <div className="glass__form__group">
-          <label>Numner of times you have been diagnosed with a STD</label><br/>
+          <label>Number of times you have been diagnosed with a STD</label><br/>
           <input
             id="SkinThickness"
             className="glass__form__input"

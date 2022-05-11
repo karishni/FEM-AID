@@ -10,6 +10,16 @@
   /*margin-right: 10px;*/
 }
 
+.tab{
+  padding-left: 20px;
+}
+
+.tab1{
+  padding-left: 30px;
+}
+.big{
+  font-size: 25px;
+}
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;

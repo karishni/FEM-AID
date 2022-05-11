@@ -113,23 +113,66 @@ function PCOS() {
       <img src={PCOSs} className="exp__image" alt="" />
       </div>
       <div className='text1'>
-      <b>Polycystic ovary syndrome (PCOS)</b> is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may develop numerous small collections of fluid (follicles) and fail to regularly release eggs.
+      <b className='big'>Polycystic ovary syndrome (PCOS)</b> is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may develop numerous small collections of fluid (follicles) and fail to regularly release eggs.
 
       The exact cause of PCOS is unknown. Early diagnosis and treatment along with weight loss may reduce the risk of long-term complications such as type 2 diabetes and heart disease.<br></br><br></br>
-      <b>Symptoms</b><br></br>
+      <b className='big'>Symptoms</b><br></br>
       Signs and symptoms of PCOS often develop around the time of the first menstrual period during puberty. Sometimes PCOS develops later, for example, in response to substantial weight gain.
       Signs and symptoms of PCOS vary. A diagnosis of PCOS is made when you experience at least two of these signs:<br></br>
-      1) <b>Irregular periods.</b> Infrequent, irregular or prolonged menstrual cycles are the most common sign of PCOS. For example, you might have fewer than nine periods a year, more than 35 days between periods and abnormally heavy periods.<br></br>
-      2) <b>Excess androgen.</b> Elevated levels of male hormones may result in physical signs, such as excess facial and body hair (hirsutism), and occasionally severe acne and male-pattern baldness.<br></br>
-      3) <b>Polycystic ovaries.</b> Your ovaries might be enlarged and contain follicles that surround the eggs. As a result, the ovaries might fail to function regularly.<br></br><br></br>
+      <ol className='tab1'>
+          <li ><b>Irregular periods.</b></li>
+          <ul type='none'>
+            <li className='tab'>Infrequent, irregular or prolonged menstrual cycles are the most common sign of PCOS. For example, you might have fewer than nine periods a year, more than 35 days between periods and abnormally heavy periods.</li>
+          </ul>
+          <li><b>Excess androgen.</b></li> 
+          <ul type='none'>
+          <li className='tab'>Elevated levels of male hormones may result in physical signs, such as excess facial and body hair (hirsutism), and occasionally severe acne and male-pattern baldness</li>
+          </ul>
+          <li><b>Polycystic ovaries.</b></li> 
+          <ul type='none'>
+          <li className='tab'>our ovaries might be enlarged and contain follicles that surround the eggs. As a result, the ovaries might fail to function regularly.</li>
+          </ul>
+      </ol>
       PCOS signs and symptoms are typically more severe if you're obese.<br></br><br></br>
-      <b>Causes</b><br></br>
+      <b className='big'>Causes</b><br></br>
       The exact cause of PCOS isn't known. Factors that might play a role include:<br></br>
-
-      1) <b>Excess insulin.</b> Insulin is the hormone produced in the pancreas that allows cells to use sugar, your body's primary energy supply. If your cells become resistant to the action of insulin, then your blood sugar levels can rise and your body might produce more insulin. Excess insulin might increase androgen production, causing difficulty with ovulation.<br></br>
-      2) <b>Low-grade inflammation.</b> This term is used to describe white blood cells' production of substances to fight infection. Research has shown that women with PCOS have a type of low-grade inflammation that stimulates polycystic ovaries to produce androgens, which can lead to heart and blood vessel problems.<br></br>
-      3) <b>Heredity.</b> Research suggests that certain genes might be linked to PCOS.<br></br>
-      4) <b>Excess androgen.</b> The ovaries produce abnormally high levels of androgen, resulting in hirsutism and acne.
+        <ol className='tab1'>
+          <li ><b>Excess insulin.</b></li>
+          <ul type='none'>
+            <li className='tab'>Insulin is the hormone produced in the pancreas that allows cells to use sugar, your body's primary energy supply. If your cells become resistant to the action of insulin, then your blood sugar levels can rise and your body might produce more insulin. Excess insulin might increase androgen production, causing difficulty with ovulation.</li>
+          </ul>
+          <li><b>Low-grade inflammation.</b></li> 
+          <ul type='none'>
+          <li className='tab'>This term is used to describe white blood cells' production of substances to fight infection. Research has shown that women with PCOS have a type of low-grade inflammation that stimulates polycystic ovaries to produce androgens, which can lead to heart and blood vessel problems.</li>
+          </ul>
+          <li><b>Heredity.</b></li> 
+          <ul type='none'>
+          <li className='tab'>Research suggests that certain genes might be linked to PCOS.</li>
+          </ul>
+          <li><b>Excess androgen.</b></li> 
+          <ul type='none'>
+          <li className='tab'>The ovaries produce abnormally high levels of androgen, resulting in hirsutism and acne.</li>
+          </ul>
+      </ol>
+        <br></br>
+        <b className='big'>When to see a doctor</b><br></br>
+        See your doctor if you have concerns about your menstrual periods, if you're experiencing infertility or if you have signs of excess androgen such as worsening hirsutism, acne and male-pattern baldness. Take this test to know more.
+        <br></br><br></br>
+      <b className='big'>Complications</b><br></br>
+      Complications of PCOS can include:
+      <ul className='tab1'>
+        <li>Infertility</li>
+        <li>Gestational diabetes or pregnancy-induced high blood pressure</li>
+        <li>Miscarriage or premature birth</li>
+        <li>Nonalcoholic steatohepatitis — a severe liver inflammation caused by fat accumulation in the liver</li>
+        <li>Metabolic syndrome — a cluster of conditions including high blood pressure, high blood sugar, and abnormal cholesterol or triglyceride levels that significantly increase your risk of cardiovascular disease</li>
+        <li>Type 2 diabetes or prediabetes</li>
+        <li>Sleep apnea</li>
+        <li>Depression, anxiety and eating disorders</li>
+        <li>Abnormal uterine bleeding</li>
+        <li>Cancer of the uterine lining (endometrial cancer)</li>
+      </ul>
+      Obesity is associated with PCOS and can worsen complications of the disorder.
         </div>
     </div>
     </div>
@@ -175,15 +218,16 @@ function PCOS() {
         </div>
         <div className="glass__form__group">
           <label>Do you feel bloated? (Yes/No)</label><br/>
-          <input
+           <input
             id="bloated"
             className="glass__form__input"
             //placeholder="Pregnancies"
             //required
+            
             type="text"
             value={bloated}
             onChange={(e) => setBloated(e.target.value)}
-          />
+          /> 
         </div>
         <div className="glass__form__group">
           <label>Do you have facial hair?</label><br/>
