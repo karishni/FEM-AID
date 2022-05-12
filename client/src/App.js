@@ -2,7 +2,7 @@ import "./App.css";
 import React, { Component } from "react";
 import jwtDecode from "jwt-decode";
 import { Route, Switch, Redirect } from "react-router-dom";
-
+import "./components/styles.css"
 import http from "./services/httpService";
 import { usersEndPoint } from "./config.json";
 import Dashboard from "./components/dashboard";
@@ -21,6 +21,7 @@ import PCOS from './components/pcos'
 import Cervical from './components/cervical'
 import Health from './components/Health'
 import DiseaseDetection from "./components/DiseaseDetection";
+import Landing from "./components/common/Landing"
 
 class App extends Component {
   state = {};
@@ -30,7 +31,7 @@ class App extends Component {
       const user_jwt = jwtDecode(jwt);
       const user = await http.get(`${usersEndPoint}${user_jwt._id}`);
       this.setState({ user: user.data });
-    } catch (ex) {}
+    } catch (ex) { }
   }
   render() {
     return (
@@ -59,12 +60,12 @@ class App extends Component {
             path="/post/:id"
             render={(props) => <PostPage {...props} user={this.state.user} />}
           />
-          <Route exact path="/" component={Jumotron} />
+          <Route exact path="/" component={Landing} />
           <Route exact path="/diabetes" component={Glass} />
           <Route exact path="/pcos" component={PCOS} />
           <Route exact path="/cervical" component={Cervical} />
           <Route exact path="/BMI" component={Health} />
-          <Route exact path="/diseasepred" component={DiseaseDetection}/>
+          <Route exact path="/diseasepred" component={DiseaseDetection} />
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/not-found" />
         </Switch>
