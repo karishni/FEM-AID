@@ -471,7 +471,7 @@ h6,
 }
 
 .display-2 {
-    font-size: 5.5rem;
+    font-size: 4.5rem !important;
     font-weight: 300;
     line-height: 1.2;
 }
@@ -486,6 +486,7 @@ h6,
     font-size: 4.5rem;
     font-weight: 300;
     line-height: 1.2;
+
 }
 
 @media (max-width: 1200px) {
@@ -2709,23 +2710,23 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #194376;
-    border-color: #194376;
+    color: #fff !important;
+    background-color: #194376 !important;
+    border-color: #194376 impr !important;
 }
 
 .btn-primary:hover {
-    color: #fff;
-    background-color: #123156;
-    border-color: #102b4c;
+    color: #fff !important;
+    background-color: #123156 !important;
+    border-color: #102b4c !important;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-    color: #fff;
-    background-color: #123156;
-    border-color: #102b4c;
-    box-shadow: 0 0 0 0.2rem rgba(60, 95, 139, 0.5);
+    color: #fff !important;
+    background-color: #123156 !important;
+    border-color: #102b4c !important;
+    box-shadow: 0 0 0 0.2rem rgba(60, 95, 139, 0.5) !important;
 }
 
 .btn-primary.disabled,
@@ -6732,7 +6733,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-    background-color: #46C6CE !important;
+    background-color: #194376 !important;
 }
 
 a.bg-secondary:hover,
@@ -8361,6 +8362,7 @@ button.bg-dark:focus {
 .p-3 {
     padding: 1rem !important;
     max-width: 900px;
+    margin-top: 20rem;
 }
 
 .pt-3,
@@ -10756,7 +10758,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
     z-index: 1;
 }
 
