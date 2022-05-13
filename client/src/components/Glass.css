@@ -4,27 +4,47 @@
 
 .row {
   display: flex;
+  
+  height: fit-content;
   /* margin: 10px 10px 0px 0px; */
   /*margin-right: 10px;*/
 }
 
+.tab{
+  padding-left: 20px;
+}
+
+.tab1{
+  padding-left: 30px;
+}
+.big{
+  font-size: 25px;
+}
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 30px;
   margin: auto;
-  ;
 }
 
 .image{
   display: block;
-  margin-left: auto;
+  margin-left: 120px;
   margin-right: auto;
   width: 50%;
 }
 
 .text{
   margin: 40px;
+}
+
+.text1{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.vert_align{
+  vertical-align: text-top;
 }
 
 .glass {
@@ -47,6 +67,7 @@
     position: relative;
     display: grid;
     margin: auto;
+    padding-left: 50px;
   }
   
   .glass__form h2 {
