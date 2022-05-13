@@ -27,7 +27,7 @@ function Landing() {
                 <div className="p-3">
                   <h4 className="text-white text-uppercase mb-md-3">Fem-Aid</h4>
                   <h1 className="display-3 text-white mb-md-4">A Conversation about Female Health</h1>
-                  <a href="./log" className="btn btn-light py-md-3 px-md-5 mt-2">Join Our Community</a>
+                  <a href="/users/login" className="btn btn-light py-md-3 px-md-5 mt-2">Join Our Community</a>
                 </div>
               </div>
             </div>
@@ -37,7 +37,7 @@ function Landing() {
                 <div className="p-3">
                   <h4 className="text-white text-uppercase mb-md-3">Fem-Aid</h4>
                   <h1 className="display-3 text-white mb-md-4" >Take a test today! </h1>
-                  <a href="./log" className="btn btn-light py-md-3 px-md-5 mt-2">Join Our Community</a>
+                  <a href="/users/login" className="btn btn-light py-md-3 px-md-5 mt-2">Join Our Community</a>
                 </div>
               </div>
             </div>
