@@ -33,7 +33,7 @@ class Dashboard extends Component {
   handlePageChange = (page) => {
     this.setState({ currentPage: page });
   };
-  handlePostDelete = (post) => {};
+  handlePostDelete = (post) => { };
   handleTagSelect = (tag) => {
     this.setState({ selectedTag: tag, currentPage: 1 });
   };
@@ -60,18 +60,18 @@ class Dashboard extends Component {
     const posts = paginate(filtered, currentPage, pageSize);
     if (allposts.length === 0)
       return (
-       <div>
-      <p>There are no posts in the database!</p>
-      <Link to="/new-post">
-                    <button
-                      type="button"
-                      class="btn btn-success"
-                      style={{ marginBottom: 20 }}
-                    >
-                      New Post
-                    </button>
-                  </Link>;
-                  </div> )
+        <div>
+          <p>There are no posts in the database!</p>
+          <Link to="/new-post">
+            <button
+              type="button"
+              class="btn btn-primary"
+              style={{ marginBottom: 20 }}
+            >
+              New Post
+            </button>
+          </Link>;
+        </div>)
     return (
       <React.Fragment>
         <div className="container">

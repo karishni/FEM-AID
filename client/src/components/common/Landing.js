@@ -15,48 +15,8 @@ import User from "../../Assets/user.jpg";
 function Landing() {
   return (
     <div className="landing">
-      <div className="container-fluid bg-primary py-3">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-              <div className="d-inline-flex align-items-center">
-                <a className="text-white pr-3" href="">NGOs</a>
-                <span className="text-white">|</span>
-                <a className="text-white pr-3" href="">Helplines</a>
-                <span className="text-white">|</span>
-                <a className="text-white pr-3" href="">Doctors</a>
-                <span className="text-white">|</span>
-                <a className="text-white pr-3" href="">Community</a>
-                <span className="text-white">|</span>
-                <a className="text-white px-3" href="">Blogs</a>
-                <span className="text-white">|</span>
-                <a className="text-white pl-3" href="">Diseases</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="container-fluid position-relative nav-bar p-0">
-        <div className="footer-box-1 container-lg position-relative p-0 px-lg-3">
-          <nav className="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
-            <a href="" className="navbar-brand">
-              <h1 className="m-0 text-secondary"><span className="text-primary">FEM</span>AID</h1>
-            </a>
-            <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-              <div className="navbar-nav ml-auto py-0">
-                <a href="index.html" className="nav-item nav-link active">Home</a>
-                <a href="#aboutUs" className="nav-item nav-link">About</a>
 
-                <a href="#footer" className="nav-item nav-link">Contact</a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
 
       <div className="container-fluid p-0">
         <div id="header-carousel" className="carousel slide" data-ride="carousel">
@@ -67,7 +27,7 @@ function Landing() {
                 <div className="p-3">
                   <h4 className="text-white text-uppercase mb-md-3">Fem-Aid</h4>
                   <h1 className="display-3 text-white mb-md-4">A Conversation about Female Health</h1>
-                  <a href="" className="btn btn-primary py-md-3 px-md-5 mt-2"><a href="./dashboard">Join Our Community</a></a>
+                  <a href="./log" className="btn btn-light py-md-3 px-md-5 mt-2">Join Our Community</a>
                 </div>
               </div>
             </div>
@@ -76,8 +36,8 @@ function Landing() {
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div className="p-3">
                   <h4 className="text-white text-uppercase mb-md-3">Fem-Aid</h4>
-                  <h1 className="display-3 text-white mb-md-4">Take a test today! </h1>
-                  <a href="./diseasepred" className="btn btn-primary py-md-3 px-md-5 mt-2">Join Our Community</a>
+                  <h1 className="display-3 text-white mb-md-4" >Take a test today! </h1>
+                  <a href="./log" className="btn btn-light py-md-3 px-md-5 mt-2">Join Our Community</a>
                 </div>
               </div>
             </div>
@@ -129,10 +89,9 @@ function Landing() {
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
-                  <i className="fa fa-3x fa-capsules text-secondary"></i>
-
+                  <i className="fas fa-3x fa-laptop-medical text-secondary"></i>
                 </div>
-                <h4 className="font-weight-bold m-0"><a href="./diseasepred">PCOS</a></h4>
+                <h4 className="font-weight-bold m-0"><a href="./diabetes">Diabetes</a></h4>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 pb-1">
@@ -142,7 +101,7 @@ function Landing() {
                 >
                   <i className="fas fa-3x fa-laptop-medical text-secondary"></i>
                 </div>
-                <h4 className="font-weight-bold m-0"><a href="./diseasepred">Diabetes</a></h4>
+                <h4 className="font-weight-bold m-0"><a href="./pcos">PCOS</a></h4>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 pb-1">
@@ -150,9 +109,9 @@ function Landing() {
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
-                  <i className="fa fa-3x fa-hospital-user text-secondary"></i>
+                  <i className="fas fa-3x fa-laptop-medical text-secondary"></i>
                 </div>
-                <h4 className="font-weight-bold m-0"><a href="./diseasepred">Cervical Cancer</a></h4>
+                <h4 className="font-weight-bold m-0"><a href="./cervical">Cervical Cancer</a></h4>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 pb-1">
@@ -160,9 +119,9 @@ function Landing() {
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
-                  <i className="fa fa-3x fa-hand-holding-medical text-secondary"></i>
+                  <i className="fas fa-3x fa-laptop-medical text-secondary"></i>
                 </div>
-                <h4 className="font-weight-bold m-0"><a href="./diseasepred">BMI Calculator</a></h4>
+                <h4 className="font-weight-bold m-0"><a href="./bmi">BMI Calculator</a></h4>
               </div>
             </div>
           </div>
@@ -185,7 +144,7 @@ function Landing() {
                 sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam
                 sea
                 ipsum est dolor</p>
-              <a href="" className="btn btn-primary py-md-3 px-md-5 mt-2">Take A Test</a>
+              <a href="/diseasepred" className="btn btn-primary py-md-3 px-md-5 mt-2">Take A Test</a>
               <div className="row">
               </div>
             </div>
@@ -201,11 +160,11 @@ function Landing() {
               <p>This is a safe space for you to share your thoughts and
                 ask all your doubts about YOUR health!
                 Do participate on our discussion forum!</p>
-              <a href="" className="btn btn-primary py-md-3 px-md-5 mt-2">Ask away!</a>
+              <a href="./dashboard" className="btn btn-primary py-md-3 px-md-5 mt-2">Ask away!</a>
             </div>
             <div className="col-lg-5">
               <div
-                className="d-flex flex-column align-items-center justify-content-center bg-secondary h-100 py-5 px-3">
+                className="d-flex flex-column align-items-center justify-content-center h-100 py-5 px-3" style={{ backgroundColor: "#46C6CE", borderRadius: "10px" }}>
                 <i className="fa fa-5x fa-certificate text-white mb-5"></i>
                 <h1 className="display-1 text-white mb-3">Talk</h1>
                 <h1 className="text-white m-0">To Professionals</h1>
@@ -226,7 +185,7 @@ function Landing() {
                 >
                   <h2 className="display-2 text-secondary m-0">1</h2>
                 </div>
-                <h3 className="font-weight-bold m-0 mt-2">Get Medical Tests</h3>
+                <h3 className="font-weight-bold m-0 mt-2">Get Medical Tests done from home</h3>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -275,26 +234,7 @@ function Landing() {
                   lorem. Dolor ipsum clita</p>
               </div>
             </div>
-            <div className="testimonial-item">
-              <img className="testim position-relative rounded-circle bg-white shadow mx-auto" src={Test2}
-                alt="" />
-              <div className="bg-light text-center p-4 pt-0">
-                <h5 className="font-weight-medium mt-5">Name</h5>
-                <p className="text-muted font-italic">Profession</p>
-                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita
-                  lorem. Dolor ipsum clita</p>
-              </div>
-            </div>
-            <div className="testimonial-item">
-              <img className="testim position-relative rounded-circle bg-white shadow mx-auto" src={Test3}
-                alt="" />
-              <div className="bg-light text-center p-4 pt-0">
-                <h5 className="font-weight-medium mt-5">Name</h5>
-                <p className="text-muted font-italic">Profession</p>
-                <p className="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita
-                  lorem. Dolor ipsum clita</p>
-              </div>
-            </div>
+
             <div className="testimonial-item">
               <img className="testim position-relative rounded-circle bg-white shadow mx-auto" src={Test4}
                 alt="" />
@@ -382,7 +322,7 @@ function Landing() {
       </div>
 
 
-      <div id="footer" className="container-fluid bg-primary text-white mt-5 pt-5 px-sm-3 px-md-5">
+      <div id="footer" className="container-fluid text-white mt-5 pt-5 px-sm-3 px-md-5" style={{ backgroundColor: "#194376", height: "400px" }}>
         <div className="row pt-5">
           <div className="col-lg-3 col-md-6 mb-5">
             <a href="">
@@ -402,15 +342,15 @@ function Landing() {
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white mb-4">Get In Touch</h4>
             <p>Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</p>
-            <p><i className="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i className="fa fa-phone mr-2"></i>7502201234</p>
             <p><i className="fa fa-envelope mr-2"></i>info@example.com</p>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white mb-4">Quick Links</h4>
             <div className="d-flex flex-column justify-content-start">
-              <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Home</a>
-              <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>About Us</a>
-              <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>Contact Us</a>
+              <a className="text-white mb-2" href="/"><i className="fa fa-angle-right mr-2"></i>Home</a>
+              <a className="text-white mb-2" href="/"><i className="fa fa-angle-right mr-2"></i>About Us</a>
+              <a className="text-white" href="/"><i className="fa fa-angle-right mr-2"></i>Contact Us</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
@@ -429,7 +369,6 @@ function Landing() {
       <a href="#" className="btn btn-lg btn-primary back-to-top"><i className="fa fa-angle-double-up"></i></a>
 
 
-    // JavaScript Libraries
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
       <script src="lib/easing/easing.min.js"></script>

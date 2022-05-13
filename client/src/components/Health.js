@@ -18,16 +18,16 @@ function Health() {
   const [age, setAge] = useState(0);
   const [page1, setPage1] = useState(true);
 
-//   const theme = createMuiTheme({
-//     palette: {
-//       primary: {
-//         main: "#32A899",
-//       },
-//       secondary: {
-//         main: "#31D570",
-//       },
-//     },
-//   });
+  //   const theme = createMuiTheme({
+  //     palette: {
+  //       primary: {
+  //         main: "#32A899",
+  //       },
+  //       secondary: {
+  //         main: "#31D570",
+  //       },
+  //     },
+  //   });
 
   const handleSubmit = () => {
     if (height < 1 || weight < 1 || age < 1) {
@@ -83,95 +83,95 @@ function Health() {
 
   return (
     // <ThemeProvider theme={theme}>
-      <div className="bmi">
-        {page1 ? (
-          <div className="bmi__firstPage">
-            <div className="bmi__calculatorContainer">
-              <div className="bmi__formContainer">
-                <h2 className="bmi__calculatorHeading">Calculate your BMI</h2>
-                <div className="BmiContent">Your BMI is a measurement that is a ratio of your weight and height. It’s a good way to gauge whether your weight is in healthy proportion to your height. In fact, knowing your BMI can help you – and your GP – determine any health risks you may face if it’s outside of the healthy range.</div>
-                <form className="bmi__form">
-                  <TextField
-                    label="Height (cm)"
-                    type="number"
-                    variant="outlined"
-                    onChange={(e) => setHeight(e.target.value)}
-                  />
-                  <TextField
-                    label="Weight (kg)"
-                    type="number"
-                    variant="outlined"
-                    onChange={(e) => setWeight(e.target.value)}
-                  />
-                  <TextField
-                    label="Age (yrs)"
-                    type="number"
-                    variant="outlined"
-                    onChange={(e) => setAge(e.target.value)}
-                  />
-                  <Button onClick={handleSubmit}>Calculate</Button>
-                </form>
-              </div>
+    <div className="bmi">
+      {page1 ? (
+        <div className="bmi__firstPage">
+          <div className="bmi__calculatorContainer">
+            <div className="bmi__formContainer">
+              <h2 className="bmi__calculatorHeading">Calculate your BMI</h2>
+              <div className="BmiContent">Your BMI is a measurement that is a ratio of your weight and height. It’s a good way to gauge whether your weight is in healthy proportion to your height. In fact, knowing your BMI can help you – and your GP – determine any health risks you may face if it’s outside of the healthy range.</div>
+              <form className="bmi__form">
+                <TextField
+                  label="Height (cm)"
+                  type="number"
+                  variant="outlined"
+                  onChange={(e) => setHeight(e.target.value)}
+                />
+                <TextField
+                  label="Weight (kg)"
+                  type="number"
+                  variant="outlined"
+                  onChange={(e) => setWeight(e.target.value)}
+                />
+                <TextField
+                  label="Age (yrs)"
+                  type="number"
+                  variant="outlined"
+                  onChange={(e) => setAge(e.target.value)}
+                />
+                <Button onClick={handleSubmit}>Calculate</Button>
+              </form>
             </div>
-            {/* <div className="bmi__imgContainer">
+          </div>
+          {/* <div className="bmi__imgContainer">
               <img src={Fitness} />
             </div> */}
-          </div>
-        ) : (
-          <div className="bmi__secondPage">
-            <div className="bmi__resultContainer">
-              <div className="bmi__resultHeader">
-                <div className="bmi__inputData">
-                  <div>
-                    {/* <img src={Age} /> */}
-                    <p>{age} years</p>
-                  </div>
-                </div>
-                <div className="bmi__inputData">
-                  <div>
-                    
-                    <p>{height} cm</p>
-                  </div>
-                </div>
-                <div className="bmi__inputData">
-                  <div>
-                    {/* <img src={Scale} /> */}
-                    <p>{weight} kg</p>
-                  </div>
+        </div>
+      ) : (
+        <div className="bmi__secondPage">
+          <div className="bmi__resultContainer">
+            <div className="bmi__resultHeader">
+              <div className="bmi__inputData">
+                <div>
+                  {/* <img src={Age} /> */}
+                  <p>{age} years</p>
                 </div>
               </div>
-              <div className="bmi__resultData">
-                <div className="bmi__resultBMI">
-                  Your BMI : {((weight / (height * height)) * 10000).toFixed(2)}
-                </div>
-                <div className="bmi__resultMessage">
-                  <p>You are {getBMIResultMessage()}</p>
+              <div className="bmi__inputData">
+                <div>
+
+                  <p>{height} cm</p>
                 </div>
               </div>
-              <div className="bmi__waterContainer">
-                {/* <img src={Water} /> */}
-                <p>Drink At least 8 litres of water daily</p>
-              </div>
-              <div className="bmi__recommendations">
-                <table>
-                  <tr>
-                    <td>Recommended Calories</td>
-                    <td>{getRecommendedCalories()} per day</td>
-                  </tr>
-                  <tr>
-                    <td>Recommended Body Weight</td>
-                    <td>{((height * height * 21) / 10000).toFixed(2)} kg</td>
-                  </tr>
-                  <tr>
-                    <td>Recommended Diet</td>
-                    <td>{getRecommendedDiet()}</td>
-                  </tr>
-                </table>
+              <div className="bmi__inputData">
+                <div>
+                  {/* <img src={Scale} /> */}
+                  <p>{weight} kg</p>
+                </div>
               </div>
             </div>
+            <div className="bmi__resultData">
+              <div className="bmi__resultBMI">
+                Your BMI : {((weight / (height * height)) * 10000).toFixed(2)}
+              </div>
+              <div className="bmi__resultMessage">
+                <p>You are {getBMIResultMessage()}</p>
+              </div>
+            </div>
+            <div className="bmi__waterContainer">
+              {/* <img src={Water} /> */}
+              <p>Drink At least 8 litres of water daily</p>
+            </div>
+            <div className="bmi__recommendations">
+              <table>
+                <tr>
+                  <td>Recommended Calories</td>
+                  <td>{getRecommendedCalories()} per day</td>
+                </tr>
+                <tr>
+                  <td>Recommended Body Weight</td>
+                  <td>{((height * height * 21) / 10000).toFixed(2)} kg</td>
+                </tr>
+                <tr>
+                  <td>Recommended Diet</td>
+                  <td>{getRecommendedDiet()}</td>
+                </tr>
+              </table>
+            </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
+    </div>
     // </ThemeProvider>
   );
 }

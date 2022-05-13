@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +11,8 @@ body {
     align-items: center;
 }
 
-.background{
-    background-color: #f5efff;
+.background {
+    background-color: white;
 }
 
 .heading {
@@ -40,7 +41,7 @@ body {
     width: 260px;
     height: 350px;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.115), -5px -5px 30px 7px rgba(0, 0, 0, 0.122);
     cursor: pointer;
     transition: 0.4s;
     position: relative;
@@ -63,7 +64,7 @@ body {
     right: 0;
     z-index: 1;
     border-radius: calc(var(40) * 1px);
-    background-color: #e6c0e9;
+    background-color: #194376;
     transform: translateY(100%);
     transition: 0.2s ease-in-out;
 }
@@ -82,7 +83,7 @@ body {
     align-items: center;
     gap: 2rem;
     border-radius: calc(var(40) * 1px) 0 0 0;
-    background-color: #e6c0e9;
+    background-color: #194376;
     padding: 2em;
     transform: translateY(-100%);
     transition: 0.2s ease-in-out;
@@ -98,7 +99,7 @@ body {
 }
 
 .exp__arc path {
-    fill: #e6c0e9;
+    fill: #194376;
     d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
@@ -124,14 +125,14 @@ body {
 .exp__title {
     font-size: 1.4em;
     margin: 0 0 0.3em;
-    color: #312a2e;
+    color: white;
     font-family: "Source Serif Pro", serif;
     font-weight: bolder;
 }
 
 .exp__status {
     font-size: 1em;
-    color: #1a1517;
+    color: white;
     font-family: "Source Serif Pro", serif;
     font-weight: bold;
 }
@@ -139,7 +140,7 @@ body {
 .exp__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #130c10;
+    color: white;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     text-align: justify;
@@ -154,9 +155,11 @@ body {
         width: 80vw;
         font-size: 30px;
     }
+
     .exp-Bg {
         display: none;
     }
+
     .work-exp-list {
         margin: 4rem 2vw;
     }
