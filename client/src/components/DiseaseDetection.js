@@ -1,8 +1,8 @@
 import React from "react";
 import "./DiseaseDetection.css";
-import Diabeties from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/Diabeties.jpg"
-import PCOS from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/PCOS.jpg"
-import Cervical from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/CervicalCancer.jpg"
+import Diabeties from "../Assets/Diabeties.jpg"
+import PCOS from "../Assets/PCOS.jpg"
+import Cervical from "../Assets/CervicalCancer.jpg"
 
 
 function DiseaseDetection() {

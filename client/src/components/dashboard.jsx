@@ -6,6 +6,7 @@ import Posts from "./posts";
 import { paginate } from "../utils/paginate";
 import config from "../config.json";
 import http from "../services/httpService";
+<link rel="stylesheet" href="styles.css" disabled />
 
 class Dashboard extends Component {
   state = {
@@ -74,7 +75,7 @@ class Dashboard extends Component {
         </div>)
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="container" >
           <div className="row">
             <div className="col">
               <div className="d-flex w-100 justify-content-between m-3">
