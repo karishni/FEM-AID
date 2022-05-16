@@ -38,7 +38,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="/diabetes" target="blank" >
+                            <a href="./diabetes" >
                             <img src={Diabeties} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
@@ -55,7 +55,6 @@ function DiseaseDetection() {
                                 </div></a>
                         </div>
                     </li>
-
                     <li>
                         <div className="exp">
                             <a href="/pcos" target="blank" >

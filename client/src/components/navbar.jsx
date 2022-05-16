@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 //#D4F1F4
 const NavBar = ({ user }) => {
   return (
-    <nav className="navbar navbar-expand-lg sticky-top " style={{ backgroundColor: "#194376" }}>
+    <nav className="navbar navbar-expand-lg sticky-top " style={{ backgroundColor: "#194376", width: "100%" }}>
       <NavLink className="navbar-brand" to="/">
         <b style={{ color: "white" }}>FEM-AID</b>
       </NavLink>
@@ -47,26 +47,33 @@ const NavBar = ({ user }) => {
           )}
           {user && (
             <React.Fragment>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/me" style={{ color: "white" }}>
-                    Hi {user.username}
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link ml-2" to="/" style={{ color: "white" }}>
-                    Home
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link ml-2" to="/dashboard" style={{ color: "white" }}>
-                    Dashboard
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link ml-2" to="/diseasepred" style={{ color: "white" }}>
-                    Diseases
-                  </NavLink>
-                </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/me" style={{ color: "white" }}>
+                  Hi {user.username}
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink className="nav-link ml-2" to="/" style={{ color: "white" }}>
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link ml-2" to="/dashboard" style={{ color: "white" }}>
+                  Dashboard
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link ml-2" to="/diseasepred" style={{ color: "white" }}>
+                  Diseases
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link ml-2" to="/info" style={{ color: "white" }}>
+                  Blogs
+                </NavLink>
+              </li>
+
               <li className="nav-item">
                 <NavLink className="nav-link" to="/users/logout" style={{ color: "white" }}>
                   Log Out
