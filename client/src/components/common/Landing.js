@@ -8,7 +8,7 @@ import Test3 from "../../Assets/testimonial-3.jpg";
 import Test4 from "../../Assets/testimonial-4.jpg";
 import About from "../../Assets/about.jpg";
 import User from "../../Assets/user.jpg";
-import "../../Assets/styles.css";
+import "../styles.css";
 
 
 
@@ -164,7 +164,7 @@ function Landing() {
             </div>
             <div className="col-lg-5">
               <div
-                className="d-flex flex-column align-items-center justify-content-center h-100 py-5 px-3" style={{ backgroundColor: "#46C6CE", borderRadius: "10px" }}>
+                className="d-flex flex-column align-items-center justify-content-center h-100 py-5 px-3" style={{ backgroundColor: "#46C6CE", borderRadius: "10px", height: "300px", display: "flex" }}>
                 <i className="fa fa-5x fa-certificate text-white mb-5"></i>
                 <h1 className="display-1 text-white mb-3">Talk</h1>
                 <h1 className="text-white m-0">To Professionals</h1>
@@ -280,7 +280,7 @@ function Landing() {
                 <div className="position-relative">
                   <img className="img-fluid w-100" src={Carousel2} alt="" />
                   <a href=""
-                    className="blog-1 position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4"
+                    className="blog-1 position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style={{height: "300px", display: "flex"}}
                   >
                     <h4 className="text-center text-white font-weight-medium mb-3">Dolor site amet clita kasd
                       sanct ipsum</h4>
@@ -301,7 +301,7 @@ function Landing() {
                 <div className="position-relative">
                   <img className="img-fluid w-100" src={Carousel1} alt="" />
                   <a href=""
-                    className="blog-1 position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4"
+                    className="blog-1 position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style={{height: "300px", display: "flex"}}
                   >
                     <h4 className="text-center text-white font-weight-medium mb-3">Dolor site amet clita kasd
                       sanct ipsum</h4>
