@@ -6978,7 +6978,6 @@ button.bg-dark:focus {
 }
 
 .d-flex {
-    height: 300px;
     display: flex !important;
 }
 
@@ -10793,3 +10792,4 @@ h6,
     padding: 0;
     list-style-type: none;
 }
+
