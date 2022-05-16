@@ -88,7 +88,7 @@ function Glass() {
       <b>Skin Thickness: </b>Triceps skin fold thickness in mm<br></br><br></br>
       <b>Insulin:</b> Your insulin level in pmol/L<br></br><br></br>
       <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
-      <b>Diabetes Pedigree Function:</b><br>A function which scores likelihood of diabetes based on family history</br><br></br>
+      <b>Diabetes Pedigree Function:</b>A function which scores likelihood of diabetes based on family history<br></br><br></br>
       <b>Age: </b>Enter your age
     </div>
     
