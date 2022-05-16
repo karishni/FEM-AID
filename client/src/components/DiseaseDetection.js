@@ -38,7 +38,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="./diabetes" target="blank" >
+                            <a href="./diabetes" >
                             <img src={Diabeties} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
@@ -58,7 +58,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="./pcos" target="blank" >
+                            <a href="./pcos" >
                             <img src={PCOS} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
@@ -78,7 +78,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="./cervical" target="blank" >
+                            <a href="./cervical" >
                             <img src={Cervical} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
