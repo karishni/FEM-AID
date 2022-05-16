@@ -27,7 +27,7 @@ function Glass() {
     data.append('SkinThickness', SkinThickness);
     data.append('Insulin', Insulin);
     data.append('BMI', BMI);
-    data.append('DiabetesPedigreeFunction', DiabetesPedigreeFunction);
+    data.append('DiabetesPedigreeFunction', '0.4718');
     data.append('Age', Age);
     //console.log(Pregnancies.toString());
     //const params = { Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age }
@@ -73,26 +73,43 @@ function Glass() {
   return (
     <div className='text'>
     <div className = "row">
-    {(predicted) ? ((diabetes ==='Yes')? (
-      <div className = "column">{diabetes}</div>)
-      :(<div className = "column">{diabetes}</div>)): (
     <div className = "column">
+      {(predicted) ? ((diabetes ==='Yes')? (
+      <>
+        <div className='image'>
+          <img src={Diabeties} className="exp__image" alt="" />
+        </div>
+        <div className = "column">
+          You are at high risk of diabetes, please consult a doctor immediately!
+        </div>
+      </>
+      ):(
+      <>
+        <div className='image'>
+          <img src={Diabeties} className="exp__image" alt="" />
+        </div>
+        <div className = "column">
+          You are not at risk of diabetes, but if you still feel unwell, please consult a doctor.
+        </div>
+        </>
+        )): (
+          <>
       <div className='image'>
-      <img src={Diabeties} className="exp__image" alt="" />
+        <img src={Diabeties} className="exp__image" alt="" />
       </div>
-      
-      <b>Pregnancies:</b> No. of pregnancies you've had (if any)<br></br><br></br>
-      <b>Glucose:</b> Your blood sugar level in mg/dL<br></br><br></br>
-      <b>Blood Pressure:</b> Enter your diastolic blood pressure.<br></br><br></br>
-      For example: in 132/88 mmHg , 88 is the diastolic blood pressure<br></br><br></br>
-      <b>Skin Thickness: </b>Triceps skin fold thickness in mm<br></br><br></br>
-      <b>Insulin:</b> Your insulin level in pmol/L<br></br><br></br>
-      <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
-      <b>Diabetes Pedigree Function:</b>A function which scores likelihood of diabetes based on family history<br></br><br></br>
-      <b>Age: </b>Enter your age
-    </div>
+      <p>
+        <b>Pregnancies:</b> No. of pregnancies you have had (if any)<br></br><br></br>
+        <b>Glucose:</b> Your blood sugar level in mg/dL<br></br><br></br>
+        <b>Blood Pressure:</b> Enter your diastolic blood pressure.<br></br><br></br>
+        For example: in 132/88 mmHg , 88 is the diastolic blood pressure<br></br><br></br>
+        <b>Skin Thickness: </b>Triceps skin fold thickness in mm<br></br><br></br>
+        <b>Insulin:</b> Your insulin level in pmol/L<br></br><br></br>
+        <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
+        <b>Age: </b>Enter your age
+      </p>
+      </>
     
-    )}
+    )}</div>
     <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
         <h2>Diabetes</h2>
@@ -136,19 +153,6 @@ function Glass() {
         </div>
 
         <div className="glass__form__group">
-          <label>Skin Thickness</label><br/>
-          <input
-            id="SkinThickness"
-            className="glass__form__input"
-            //placeholder="SkinThickness"
-            //required
-            type="number"
-            value={SkinThickness}
-            onChange={(e) => setSkinThickness(e.target.value)}
-          />
-        </div>
-
-        <div className="glass__form__group">
           <label>Insulin</label><br/>
           <input
             id="Insulin"
@@ -174,7 +178,7 @@ function Glass() {
           />
         </div>
 
-        <div className="glass__form__group">
+        {/* <div className="glass__form__group">
           <label>Diabetes Pedigree Function</label><br/>
           <input
             id="DiabetesPedigreeFunction"
@@ -185,7 +189,7 @@ function Glass() {
             value={DiabetesPedigreeFunction}
             onChange={(e) => setDiabetesPedigreeFunction(e.target.value)}
           />
-        </div>
+        </div> */}
 
         <div className="glass__form__group">
           <label>Age</label><br/>
@@ -197,6 +201,18 @@ function Glass() {
             type="number"
             value={Age}
             onChange={(e) => setAge(e.target.value)}
+          />
+        </div>
+        <div className="glass__form__group">
+          <label>Skin Thickness</label><br/>
+          <input
+            id="SkinThickness"
+            className="glass__form__input"
+            //placeholder="SkinThickness"
+            //required
+            type="number"
+            value={SkinThickness}
+            onChange={(e) => setSkinThickness(e.target.value)}
           />
         </div>
 
