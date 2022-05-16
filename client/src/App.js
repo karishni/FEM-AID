@@ -2,7 +2,6 @@ import "./App.css";
 import React, { Component } from "react";
 import jwtDecode from "jwt-decode";
 import { Route, Switch, Redirect } from "react-router-dom";
-import "./components/styles.css"
 import http from "./services/httpService";
 import { usersEndPoint } from "./config.json";
 import Dashboard from "./components/dashboard";

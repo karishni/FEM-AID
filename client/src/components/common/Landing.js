@@ -8,7 +8,7 @@ import Test3 from "../../Assets/testimonial-3.jpg";
 import Test4 from "../../Assets/testimonial-4.jpg";
 import About from "../../Assets/about.jpg";
 import User from "../../Assets/user.jpg";
-// import "./styles.css";
+import "../../Assets/styles.css";
 
 
 
@@ -23,7 +23,7 @@ function Landing() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img className="w-100" src={Carousel1} alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <div className="carousel-caption flex-column align-items-center justify-content-center" style={{height: "300px", display: "flex"}}>
                 <div className="p-3">
                   <h4 className="text-white text-uppercase mb-md-3">Fem-Aid</h4>
                   <h1 className="display-3 text-white mb-md-4">A Conversation about Female Health</h1>
@@ -33,7 +33,7 @@ function Landing() {
             </div>
             <div className="carousel-item">
               <img className="w-100" src={Carousel2} alt="Image" />
-              <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+              <div className="carousel-caption flex-column align-items-center justify-content-center" style={{height: "300px", display: "flex"}}>
                 <div className="p-3">
                   <h4 className="text-white text-uppercase mb-md-3">Fem-Aid</h4>
                   <h1 className="display-3 text-white mb-md-4" >Take a test today! </h1>
@@ -85,7 +85,7 @@ function Landing() {
           <h1 className="display-4 text-center mb-5">Find more about common health problems amongst women!</h1>
           <div className="row">
             <div className="col-lg-3 col-md-6 pb-1">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4"
+              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style={{height: "300px", display: "flex"}}
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
@@ -95,7 +95,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6 pb-1">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4"
+              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style={{height: "300px", display: "flex"}}
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
@@ -105,7 +105,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6 pb-1">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4"
+              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style={{height: "300px", display: "flex"}}
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
@@ -115,7 +115,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6 pb-1">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4"
+              <div className="d-flex flex-column align-items-center justify-content-center text-center bg-light mb-4 px-4" style={{height: "300px", display: "flex"}}
               >
                 <div className="d-inline-flex align-items-center justify-content-center bg-white shadow rounded-circle mb-4"
                 >
@@ -180,7 +180,7 @@ function Landing() {
           <h1 className="display-4 text-center mb-5">What we offer</h1>
           <div className="row">
             <div className="col-lg-3 col-md-6">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5" style={{height: "300px", display: "flex"}}>
                 <div className="d-inline-2 d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4"
                 >
                   <h2 className="display-2 text-secondary m-0">1</h2>
@@ -189,7 +189,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5" style={{height: "300px", display: "flex"}}>
                 <div className="d-inline-2 d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4"
                 >
                   <h2 className="display-2 text-secondary m-0">2</h2>
@@ -198,7 +198,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5" style={{height: "300px", display: "flex"}}>
                 <div className="d-inline-2 d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4"
                 >
                   <h2 className="display-2 text-secondary m-0">3</h2>
@@ -207,7 +207,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5">
+              <div className="d-flex flex-column align-items-center justify-content-center text-center mb-5" style={{height: "300px", display: "flex"}}>
                 <div className="d-inline-2 d-inline-flex align-items-center justify-content-center bg-white border border-light shadow rounded-circle mb-4"
                 >
                   <h2 className="display-2 text-secondary m-0">4</h2>
@@ -259,11 +259,11 @@ function Landing() {
                 <div className="position-relative">
                   <img className="img-fluid w-100" src={Carousel1} alt="" />
                   <a href=""
-                    className="blog-1 position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4"
+                    className="blog-1 position-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center   text-decoration-none p-4" style={{height: "300px", display: "flex"}}
                   >
                     <h4 className="text-center text-white font-weight-medium mb-3">Dolor site amet clita kasd
                       sanct ipsum</h4>
-                    <div className="d-flex text-light">
+                    <div className="d-flex text-light" style={{height: "300px", display: "flex"}}>
                       <small className="mr-2"><i className="fa fa-user text-secondary"></i> Admin</small>
                       <small className="mr-2"><i className="fa fa-folder text-secondary"></i> Web Design</small>
                       <small className="mr-2"><i className="fa fa-comments text-secondary"></i> 15</small>
@@ -284,7 +284,7 @@ function Landing() {
                   >
                     <h4 className="text-center text-white font-weight-medium mb-3">Dolor site amet clita kasd
                       sanct ipsum</h4>
-                    <div className="d-flex text-light">
+                    <div className="d-flex text-light" style={{height: "300px", display: "flex"}}>
                       <small className="mr-2"><i className="fa fa-user text-secondary"></i> Admin</small>
                       <small className="mr-2"><i className="fa fa-folder text-secondary"></i> Web Design</small>
                       <small className="mr-2"><i className="fa fa-comments text-secondary"></i> 15</small>
@@ -305,7 +305,7 @@ function Landing() {
                   >
                     <h4 className="text-center text-white font-weight-medium mb-3">Dolor site amet clita kasd
                       sanct ipsum</h4>
-                    <div className="d-flex text-light">
+                    <div className="d-flex text-light" style={{height: "300px", display: "flex"}}>
                       <small className="mr-2"><i className="fa fa-user text-secondary"></i> Admin</small>
                       <small className="mr-2"><i className="fa fa-folder text-secondary"></i> Web Design</small>
                       <small className="mr-2"><i className="fa fa-comments text-secondary"></i> 15</small>
@@ -328,7 +328,7 @@ function Landing() {
             <a href="">
               <h1 className="text-secondary mb-3"><span className="text-white">FEM</span>AID</h1>
             </a>
-            <div className="d-flex justify-content-start mt-4">
+            <div className="d-flex justify-content-start mt-4" style={{height: "300px", display: "flex"}}>
               <a className="footer-btn-1 btn btn-outline-light rounded-circle text-center mr-2 px-0"
                 href="#"><i className="fab fa-twitter"></i></a>
               <a className="footer-btn-1 btn btn-outline-light rounded-circle text-center mr-2 px-0"
@@ -347,7 +347,7 @@ function Landing() {
           </div>
           <div className="col-lg-3 col-md-6 mb-5">
             <h4 className="text-white mb-4">Quick Links</h4>
-            <div className="d-flex flex-column justify-content-start">
+            <div className="d-flex flex-column justify-content-start" style={{height: "300px", display: "flex"}}>
               <a className="text-white mb-2" href="/"><i className="fa fa-angle-right mr-2"></i>Home</a>
               <a className="text-white mb-2" href="/"><i className="fa fa-angle-right mr-2"></i>About Us</a>
               <a className="text-white" href="/"><i className="fa fa-angle-right mr-2"></i>Contact Us</a>

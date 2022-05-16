@@ -75,7 +75,7 @@ class Dashboard extends Component {
     return (
       <React.Fragment>
         <div className="container">
-          <div className="row">
+          <div className="row" >
             <div className="col">
               <div className="d-flex w-100 justify-content-between m-3">
                 Showing {filtered.length} posts.

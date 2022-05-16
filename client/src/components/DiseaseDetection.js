@@ -1,8 +1,8 @@
 import React from "react";
 import "./DiseaseDetection.css";
-import Diabeties from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/Diabeties.jpg"
-import PCOS from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/PCOS.jpg"
-import Cervical from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/CervicalCancer.jpg"
+import Diabeties from "../Assets/Diabeties.jpg"
+import PCOS from "../Assets/PCOS.jpg"
+import Cervical from "../Assets/CervicalCancer.jpg"
 
 
 function DiseaseDetection() {
@@ -38,7 +38,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="/diabetes" target="blank" >
+                            <a href="./diabetes" target="blank" >
                             <img src={Diabeties} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
@@ -58,7 +58,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="https://heartdiseasepredictionweb.herokuapp.com" target="blank" >
+                            <a href="./pcos" target="blank" >
                             <img src={PCOS} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
@@ -78,7 +78,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="https://kidneydiseasepredictionweb.herokuapp.com/" target="blank" >
+                            <a href="./cervical" target="blank" >
                             <img src={Cervical} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
