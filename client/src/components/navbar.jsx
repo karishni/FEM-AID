@@ -47,28 +47,26 @@ const NavBar = ({ user }) => {
           )}
           {user && (
             <React.Fragment>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/me" style={{ color: "white" }}>
-                  Hi {user.username}
-                </NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink className="nav-link ml-2" to="/" style={{ color: "white" }}>
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link ml-2" to="/dashboard" style={{ color: "white" }}>
-                  Dashboard
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link ml-2" to="/diseasepred" style={{ color: "white" }}>
-                  Diseases
-                </NavLink>
-              </li>
-
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/me" style={{ color: "white" }}>
+                    Hi {user.username}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link ml-2" to="/" style={{ color: "white" }}>
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link ml-2" to="/dashboard" style={{ color: "white" }}>
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link ml-2" to="/diseasepred" style={{ color: "white" }}>
+                    Diseases
+                  </NavLink>
+                </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/users/logout" style={{ color: "white" }}>
                   Log Out

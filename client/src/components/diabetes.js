@@ -1,7 +1,7 @@
 import './Glass.css'
 import { useState } from 'react'
 import axios from 'axios'
-import Diabeties from "D:/User_Data/Documents/FemAidMaxAgain/FEM-AID/client/src/Assets/Diabeties1.jpg"
+import Diabeties from "../Assets/Diabeties1.jpg"
 
 //var axios = require('axios');
 //var FormData = require('form-data');
