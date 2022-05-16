@@ -74,7 +74,7 @@ class Dashboard extends Component {
         </div>)
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="container1">
           <div className="row" >
             <div className="col">
               <div className="d-flex w-100 justify-content-between m-3">
