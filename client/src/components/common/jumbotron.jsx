@@ -1,6 +1,6 @@
 import React from "react";
 
-const Jumotron = () => {
+const Jumbotron = () => {
   return (
     <div className="jumbotron" style={{backgroundColor:"#D4F1F4"}}>
       <h1 className="display-3">Welcome to FemAid</h1>
@@ -11,4 +11,4 @@ const Jumotron = () => {
   );
 };
 
-export default Jumotron;
+export default Jumbotron;

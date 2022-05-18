@@ -90,7 +90,7 @@ class PostPage extends Component {
               post.tags.map((tag) => (
                 <span className="badge badge-success m-1 p-2">{tag.name}</span>
               ))}
-            <div className="d-flex w-100 justify-content-between mt-3 mb-3">
+            <div className="d-flex w-100 justify-content-between mt-3 mb-3" style={{height: 'auto'}}>
               <button
                 disabled={!user}
                 className={

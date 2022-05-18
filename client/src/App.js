@@ -5,7 +5,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import http from "./services/httpService";
 import { usersEndPoint } from "./config.json";
 import Dashboard from "./components/dashboard";
-import Jumotron from "./components/common/jumbotron";
+import Jumbotron from "./components/common/jumbotron";
 import NotFound from "./components/not-found";
 import NewPost from "./components/createpost";
 import Log from "./components/log";
@@ -21,6 +21,7 @@ import Cervical from './components/cervical'
 import Health from './components/Health'
 import DiseaseDetection from "./components/DiseaseDetection";
 import Landing from "./components/common/Landing"
+import Info from "./components/Info"
 
 class App extends Component {
   state = {};
@@ -65,6 +66,7 @@ class App extends Component {
           <Route exact path="/cervical" component={Cervical} />
           <Route exact path="/BMI" component={Health} />
           <Route exact path="/diseasepred" component={DiseaseDetection} />
+          <Route exact path="/info" component={Info} />
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/not-found" />
         </Switch>

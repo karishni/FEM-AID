@@ -105,18 +105,27 @@ function PCOS() {
   return (
     <div className='text'>
     <div className = "row">
+    <div className = "column">
     {(predicted) ? ((pcos ==='Yes')? (
-      <div className = "column">{pcos}</div>)
-      :(<div className = "column">{pcos}</div>)): (
-    <div className = "column"><div className='vert_align'>
+      <>
+      <div className='image'>
+      <img src={PCOSs} className="exp__image" alt="" />
+      </div>
+      <div className = "column">Probability of you having PCOS is high, please consult a doctor.</div></>)
+      :(
+      <><div className='image'>
+      <img src={PCOSs} className="exp__image" alt="" />
+      </div>
+      <div className = "column">You have low probability of PCOS.</div></>)): (
+      <div className='vert_align'>
       <div className='image'>
       <img src={PCOSs} className="exp__image" alt="" />
       </div>
       <div className='text1'>
-      <b className='big'>Polycystic ovary syndrome (PCOS)</b> is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may develop numerous small collections of fluid (follicles) and fail to regularly release eggs.
+      <b >Polycystic ovary syndrome (PCOS)</b> is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels. The ovaries may develop numerous small collections of fluid (follicles) and fail to regularly release eggs.
 
       The exact cause of PCOS is unknown. Early diagnosis and treatment along with weight loss may reduce the risk of long-term complications such as type 2 diabetes and heart disease.<br></br><br></br>
-      <b className='big'>Symptoms</b><br></br>
+      <b >Symptoms</b><br></br>
       Signs and symptoms of PCOS often develop around the time of the first menstrual period during puberty. Sometimes PCOS develops later, for example, in response to substantial weight gain.
       Signs and symptoms of PCOS vary. A diagnosis of PCOS is made when you experience at least two of these signs:<br></br>
       <ol className='tab1'>
@@ -134,7 +143,7 @@ function PCOS() {
           </ul>
       </ol>
       PCOS signs and symptoms are typically more severe if you're obese.<br></br><br></br>
-      <b className='big'>Causes</b><br></br>
+      <b >Causes</b><br></br>
       The exact cause of PCOS isn't known. Factors that might play a role include:<br></br>
         <ol className='tab1'>
           <li ><b>Excess insulin.</b></li>
@@ -155,10 +164,10 @@ function PCOS() {
           </ul>
       </ol>
         <br></br>
-        <b className='big'>When to see a doctor</b><br></br>
+        <b >When to see a doctor</b><br></br>
         See your doctor if you have concerns about your menstrual periods, if you're experiencing infertility or if you have signs of excess androgen such as worsening hirsutism, acne and male-pattern baldness. Take this test to know more.
         <br></br><br></br>
-      <b className='big'>Complications</b><br></br>
+      <b >Complications</b><br></br>
       Complications of PCOS can include:
       <ul className='tab1'>
         <li>Infertility</li>
@@ -175,8 +184,8 @@ function PCOS() {
       Obesity is associated with PCOS and can worsen complications of the disorder.
         </div>
     </div>
-    </div>
-    )}
+    
+    )}</div>
     <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
         <h2>PCOS</h2>

@@ -55,10 +55,9 @@ function DiseaseDetection() {
                                 </div></a>
                         </div>
                     </li>
-
                     <li>
                         <div className="exp">
-                            <a href="./pcos" >
+                            <a href="/pcos" target="blank" >
                             <img src={PCOS} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
@@ -78,7 +77,7 @@ function DiseaseDetection() {
 
                     <li>
                         <div className="exp">
-                            <a href="./cervical" >
+                            <a href="/cervical" target="blank" >
                             <img src={Cervical} className="exp__image" alt="" />
                                 <div className="exp__overlay">
                                     <div className="exp__header">
