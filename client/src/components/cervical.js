@@ -125,7 +125,7 @@ function Cervical() {
           setSch('No')
         }
         setPredicted(true);
-        console.log('predicted hin:' +predicted)
+        console.log('predicted sch:' +predicted)
       })
       .catch(function (error) {
         console.log(error);
@@ -155,15 +155,13 @@ function Cervical() {
       <img src={CV} className="exp__image" alt="" />
       </div>
       
-      <b>Pregnancies:</b> No. of pregnancies you've had (if any)<br></br><br></br>
-      <b>Glucose:</b> Your blood sugar level in mg/dL<br></br><br></br>
-      <b>Blood Pressure:</b> Enter your diastolic blood pressure.<br></br><br></br>
-      For example: in 132/88 mmHg , 88 is the diastolic blood pressure<br></br><br></br>
-      <b>Skin Thickness: </b>Triceps skin fold thickness in mm<br></br><br></br>
-      <b>Insulin:</b> Your insulin level in pmol/L<br></br><br></br>
-      <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
-      <b>Diabetes Pedigree Function:</b><br></br><br></br>
-      <b>Age: </b>Enter your age
+      <b>Age: </b>Enter your age.<br></br><br></br>
+      <b>Sexual Partners: </b> Enter the number of Sexual Partners you have had.<br></br><br></br>
+      <b>First Intercourse: </b> Enter the age at which you first had intercourse.<br></br><br></br>
+      <b>Pregnancies: </b> Number of times you have been pregnant (if any)<br></br><br></br>
+      <b>STDs: </b>Number of times you have been diagnosed with a STD<br></br><br></br>
+      <b>CIN: </b>Abnormal cells are found on the surface of the cervix. CIN is found when a cervical biopsy is done.<br></br><br></br>
+      <b>HPV: </b>An HPV test is usually done at the same time as a Pap test — a test that collects cells from your cervix to check for abnormalities or the presence of cancer. An HPV test can be done using the same sample from the Pap test or by collecting a second sample from the cervical canal.<br></br><br></br>
     </div>
     
     )}
@@ -183,7 +181,7 @@ function Cervical() {
           />
         </div>
         <div className="glass__form__group">
-          <label>Number of Sexual Partner</label><br/>
+          <label>Sexual Partners</label><br/>
           <input
             id="partners"
             className="glass__form__input"
@@ -196,7 +194,7 @@ function Cervical() {
         </div>
 
         <div className="glass__form__group">
-          <label>Age at which you first had intercourse</label><br/>
+          <label>First intercourse</label><br/>
           <input
             id="intercourse"
             className="glass__form__input"
@@ -209,7 +207,7 @@ function Cervical() {
         </div>
 
         <div className="glass__form__group">
-          <label>Number of times you have been pregnant</label><br/>
+          <label>Pregnancies</label><br/>
           <input
             id="pregnancies"
             className="glass__form__input"
@@ -222,7 +220,7 @@ function Cervical() {
         </div>
 
         <div className="glass__form__group">
-          <label>Number of times you have been diagnosed with a STD</label><br/>
+          <label>STDs</label><br/>
           <input
             id="SkinThickness"
             className="glass__form__input"
