@@ -111,12 +111,20 @@ function PCOS() {
       <div className='image'>
       <img src={PCOSs} className="exp__image" alt="" />
       </div>
-      <div className = "column">Probability of you having PCOS is high, please consult a doctor.</div></>)
+      <div className = "column">
+        <div className="answer">
+          You are at risk of having PCOS, please consult a doctor.
+        </div>
+      </div></>)
       :(
       <><div className='image'>
       <img src={PCOSs} className="exp__image" alt="" />
       </div>
-      <div className = "column">You have low probability of PCOS.</div></>)): (
+      <div className = "column">
+        <div className="answer">
+        You have low probability of PCOS. Please maintain your healthy habits.
+        </div>
+      </div></>)): (
       <div className='vert_align'>
       <div className='image'>
       <img src={PCOSs} className="exp__image" alt="" />

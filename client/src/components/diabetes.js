@@ -80,7 +80,9 @@ function Glass() {
           <img src={Diabeties} className="exp__image" alt="" />
         </div>
         <div className = "column">
+          <div className= 'answer'>
           You are at high risk of diabetes, please consult a doctor immediately!
+          </div>
         </div>
       </>
       ):(
