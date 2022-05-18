@@ -21,7 +21,7 @@ import Cervical from './components/cervical'
 import Health from './components/Health'
 import DiseaseDetection from "./components/DiseaseDetection";
 import Landing from "./components/common/Landing"
-import Info from "./components/Info"
+import periods from "./components/periods"
 
 class App extends Component {
   state = {};
@@ -66,7 +66,7 @@ class App extends Component {
           <Route exact path="/cervical" component={Cervical} />
           <Route exact path="/BMI" component={Health} />
           <Route exact path="/diseasepred" component={DiseaseDetection} />
-          <Route exact path="/info" component={Info} />
+          <Route exact path="/periodsinfo" component={periods} />
           <Redirect from="/users" to="/users/login " />
           <Redirect to="/not-found" />
         </Switch>

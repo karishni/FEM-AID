@@ -89,7 +89,9 @@ function Glass() {
           <img src={Diabeties} className="exp__image" alt="" />
         </div>
         <div className = "column">
-          You are not at risk of diabetes, but if you still feel unwell, please consult a doctor.
+          <div className='answer'>
+          <b>You are not at risk of diabetes, but if you still feel unwell, please consult a doctor.</b>
+          </div>
         </div>
         </>
         )): (
@@ -97,16 +99,16 @@ function Glass() {
       <div className='image'>
         <img src={Diabeties} className="exp__image" alt="" />
       </div>
-      <p>
+      <div className='text1'>
         <b>Pregnancies:</b> No. of pregnancies you have had (if any)<br></br><br></br>
         <b>Glucose:</b> Your blood sugar level in mg/dL<br></br><br></br>
         <b>Blood Pressure:</b> Enter your diastolic blood pressure.<br></br><br></br>
         For example: in 132/88 mmHg , 88 is the diastolic blood pressure<br></br><br></br>
         <b>Skin Thickness: </b>Triceps skin fold thickness in mm<br></br><br></br>
         <b>Insulin:</b> Your insulin level in pmol/L<br></br><br></br>
-        <b>BMI:</b> Click here to calculate your body mass index<br></br><br></br>
+        <b>BMI:</b> Click <u><a href='/BMI'>here</a></u> to calculate your body mass index<br></br><br></br>
         <b>Age: </b>Enter your age
-      </p>
+      </div>
       </>
     
     )}</div>
