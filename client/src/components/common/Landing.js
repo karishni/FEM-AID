@@ -264,9 +264,7 @@ function Landing() {
                     <h4 className="text-center text-white font-weight-medium mb-3">Information about PCOS</h4>
                   </a>
                 </div>
-                <p className="m-0 p-4">Amet dolores labore magna et amet tempor dolor et dolor. Et sit ipsum et eos
-                  rebum labore ea labore sea. Et sed elitr labore sed labore. Lorem et lorem amet sed sed kasd
-                  ipsum rebum</p>
+                <p className="m-0 p-4">Polycystic ovary syndrome (PCOS) is a hormonal disorder common among women of reproductive age. Women with PCOS may have infrequent or prolonged menstrual periods or excess male hormone (androgen) levels.</p>
               </div>
             </div>
             <div className="col-lg-4 mb-2">
@@ -279,9 +277,7 @@ function Landing() {
                     <h4 className="text-center text-white font-weight-medium mb-3">Period Cramps and how to overcome them</h4>
                   </a>
                 </div>
-                <p className="m-0 p-4">Amet dolores labore magna et amet tempor dolor et dolor. Et sit ipsum et eos
-                  rebum labore ea labore sea. Et sed elitr labore sed labore. Lorem et lorem amet sed sed kasd
-                  ipsum rebum</p>
+                <p className="m-0 p-4">Menstrual cramps (dysmenorrhea) are throbbing or cramping pains in the lower abdomen. Many women have menstrual cramps just before and during their menstrual periods. For some women, the discomfort is merely annoying.</p>
               </div>
             </div>
             <div className="col-lg-4 mb-2">
@@ -294,9 +290,9 @@ function Landing() {
                     <h4 className="text-center text-white font-weight-medium mb-3">Cervical Cancer Information</h4>
                   </a>
                 </div>
-                <p className="m-0 p-4">Amet dolores labore magna et amet tempor dolor et dolor. Et sit ipsum et eos
-                  rebum labore ea labore sea. Et sed elitr labore sed labore. Lorem et lorem amet sed sed kasd
-                  ipsum rebum</p>
+                <p className="m-0 p-4">Cervical cancer is a type of cancer that occurs in the cells of the cervix — the lower part of the uterus that connects to the vagina.
+
+Various strains of the human papillomavirus (HPV), a sexually transmitted infection, play a role in causing most cervical cancer.</p>
               </div>
             </div>
           </div>

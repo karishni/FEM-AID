@@ -102,6 +102,7 @@ ul#topnav li>ul>li {
     display: table;
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 .section {
@@ -133,6 +134,12 @@ ul#topnav li>ul>li {
     background-color: inherit;
     color: #444;
     margin-top: 0;
+}
+.imageAlign{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .pageitem p {
