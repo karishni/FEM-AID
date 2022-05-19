@@ -147,9 +147,19 @@ function Cervical() {
   return (
     <div className='text'>
     <div className = "row">
-    {(predicted) ? ((bio ==='Yes')? (
-      <div className = "column">{bio}{cito}</div>)
-      :(<div className = "column">{bio} {cito} {hin} {sch}</div>)): (
+    <div className='column'>
+    {(predicted) ? 
+    <>
+    <div className='image'>
+    <img src={CV} className="exp__image" alt="" />
+    </div>
+    <div className='column'>
+    <div className='answer'>
+      Risk according to Hinselmann Test: {hin}<br/>
+      Risk according to Schiller Test: {sch}<br/>
+      Risk according to Citology Test: {cito}<br/>
+      Risk according to Biopsy Test: {bio}<br/>
+    </div></div> </>:(
     <div className = "column">
       <div className='image'>
       <img src={CV} className="exp__image" alt="" />
@@ -164,7 +174,7 @@ function Cervical() {
       <b>HPV: </b>An HPV test is usually done at the same time as a Pap test — a test that collects cells from your cervix to check for abnormalities or the presence of cancer. An HPV test can be done using the same sample from the Pap test or by collecting a second sample from the cervical canal.<br></br><br></br>
     </div>
     
-    )}
+    )}</div>
     <div className="glass column">
       <form onSubmit={(e) => handleSubmit(e)} className="glass__form">
         <h2>Cervical Cancer</h2>
